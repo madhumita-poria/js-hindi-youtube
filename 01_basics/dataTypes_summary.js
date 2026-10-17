@@ -8,21 +8,21 @@ const scoreValue = 100.3
 const isLoggedIn = false
 const outSideTemp = null
 
-console.log(typeof outSideTemp); // output is object not null
+// console.log(typeof outSideTemp); // output is object not null
 
 let userEmail;    // output : undefined
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(typeof anotherId);   // symbol type is symbol
+// console.log(typeof anotherId);   // symbol type is symbol
 
 
-console.log(id === anotherId)
+// console.log(id === anotherId)
 
 const bigNumber = 98457867545783893n  // BigInt number
 
-console.log(typeof bigNumber);  // BigInt
+// console.log(typeof bigNumber);  // BigInt
 
 
 // Reference or non-primitive types
@@ -32,7 +32,7 @@ console.log(typeof bigNumber);  // BigInt
 
 const heros = ["shaktiman", "naagraj", "doga"]
 
-console.log(typeof heros);     // array type is object
+// console.log(typeof heros);     // array type is object
 
 
 let myObj = {
@@ -41,13 +41,25 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
     
 }
 
-console.log(typeof myFunction);   // function (it is also called object function)
+// console.log(typeof myFunction);   // function (it is also called object function)
 
 
+// ****************************************************************************************
+
+// Stack (primitive type) value copy ,  Heap (non-primitive type) reference copy
+
+let myYoutubeName = "madhudotcom"
+
+let anotherName = myYoutubeName
+
+anotherName = "Chaiaurcode"
+
+console.log(anotherName);
+console.log(myYoutubeName);
 
 
 
