@@ -52,6 +52,8 @@ const myFunction = function(){
 
 // Stack (primitive type) value copy ,  Heap (non-primitive type) reference copy
 
+// Stack
+
 let myYoutubeName = "madhudotcom"
 
 let anotherName = myYoutubeName
@@ -60,6 +62,22 @@ anotherName = "Chaiaurcode"
 
 console.log(anotherName);
 console.log(myYoutubeName);
+
+
+// Heap
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "madhu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
 
