@@ -6,7 +6,7 @@ console.log(name + repoCount + " Value");  // old approach
 // string interpolation
 console.log(`Hello my name is ${name} and my Repo count is ${repoCount} `);
 
-const gameName = new String('madhumita')
+const gameName = new String('madhumita-mp-com')
 
 console.log(typeof gameName);        // object
 
@@ -25,6 +25,20 @@ console.log(newString);   // madh            0 index is include and 4 index is e
 
 const anotherString = gameName.slice(-7, 4)    
 console.log(anotherString);                    // dh
+ 
+const newStringOne = "  madhu  "
+console.log(newStringOne);
+console.log(newStringOne.trim());    // remove extra space
+
+const url = "https://madhu.com/madhu%20mita"
+console.log(url.replace('%20', '-'))
+
+console.log(url.includes('madhu'));
+
+console.log(gameName.split('-'));
+
+
+
 
 
 
